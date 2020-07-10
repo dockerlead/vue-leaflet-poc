@@ -7,10 +7,10 @@
 </template>
 
 <script lang="ts">
-import { Vue, Component, Prop } from "vue-property-decorator";
-import Navigation from "@/components/shared/Navigation.vue"
+import { Vue, Component } from "vue-property-decorator";
+import Navigation from "@/components/shared/Navigation.vue";
 import Home from "@/views/Home.vue";
-import Footer from "@/components/shared/Footer.vue"
+import Footer from "@/components/shared/Footer.vue";
 @Component({
   name: "App",
   components: {
@@ -21,7 +21,7 @@ import Footer from "@/components/shared/Footer.vue"
 })
 export default class App extends Vue {
   created() {
-    this.$vuetify.theme.dark = true
+    this.$vuetify.theme.dark = true;
   }
 }
 </script>

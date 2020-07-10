@@ -1,9 +1,9 @@
 <template>
-  <LMap 
-  :center="center" 
-  :options="mapOptions" 
-  class="main-map"
-  @update:center="centerUpdate"
+  <LMap
+    :center="center"
+    :options="mapOptions"
+    class="main-map"
+    @update:center="centerUpdate"
   >
     <LTileLayer :url="url" :attribution="attribution" />
   </LMap>
@@ -13,7 +13,7 @@
 import { Vue, Component } from "vue-property-decorator";
 import * as L from "leaflet";
 import { LMap, LTileLayer, LMarker, LPopup, LTooltip } from "vue2-leaflet";
-import store from "@/store"
+import store from "@/store";
 
 @Component({
   components: {
@@ -44,8 +44,8 @@ export default class LeafletMap extends Vue {
 </script>
 
 <style scoped>
-  .main-map {
-    width: 100%;
-    height: 100%;
-  }
+.main-map {
+  width: 100%;
+  height: 100%;
+}
 </style>
